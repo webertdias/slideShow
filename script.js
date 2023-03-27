@@ -1,10 +1,17 @@
 const paisagens = document.querySelector(".paisagens");
 
 const imagens = [
-    'imagens/lago.jpeg',
-    'imagens/inverno.jpeg',
-    'imagens/praia1.jpeg',
-    'imagens/outono.jpeg'
+    'imagens/cachoeira-na-islandia.jpeg',
+    'imagens/campo.jpeg',
+    'imagens/cachoeira.jpeg',
+    'imagens/captolio.jpeg',
+    'imagens/iracemapolis.jpeg',
+    'imagens/lencois.jpeg',
+    'imagens/litoral.jpeg',
+    'imagens/penhasco.jpeg',
+    'imagens/rio.jpeg',
+    'imagens/viagem.jpeg',
+    'imagens/viagem.jpeg'
 ];
 
 setTimeout(slideShow(),2000);
@@ -20,27 +27,10 @@ function slideShow(){
         
      }
     }
+
+    
     
 
+     
 
 
-
-//var time = 2000;
-//var count = 0;
-
-//function moveSlideShow(){
-//    paisagens.src = imagens[count];
-
- //   if(count < imagens.length - 1){
-//          count++;
-//    }else{
- //       count = 0;
-//    }
-//    setTimeout("moveSlideShow()", time);
-//}
-
-//window.onload = moveSlideShow;
-
-//function slideShow() {
-
-//
