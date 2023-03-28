@@ -1,44 +1,44 @@
-const paisagens = document.querySelector(".paisagens");
-const horario = document.getElementById("hora");
+const landscapes = document.querySelector(".landscapes");
+const time = document.getElementById("hour");
 
-const imagens = [
-    'imagens/cachoeira-na-islandia.jpeg',
-    'imagens/baloes.jpeg',
-    'imagens/cachoeira.jpeg',
-    'imagens/captolio.jpeg',
-    'imagens/iracemapolis.jpeg',
-    'imagens/lencois.jpeg',
-    'imagens/litoral.jpeg',
-    'imagens/penhasco.jpeg',
-    'imagens/rio.jpeg',
-    'imagens/viagem.jpeg',
-    'imagens/viagem.jpeg'
+const images = [
+    'images/cachoeira-na-islandia.jpeg',
+    'images/baloes.jpeg',
+    'images/cachoeira.jpeg',
+    'images/captolio.jpeg',
+    'images/iracemapolis.jpeg',
+    'images/lencois.jpeg',
+    'images/litoral.jpeg',
+    'images/penhasco.jpeg',
+    'images/rio.jpeg',
+    'images/viagem.jpeg',
+    'images/viagem.jpeg'
 ];
 
 setTimeout(slideShow(),2000);
-setInterval(relogio, 1000);
+setInterval(clock, 1000);
 
 
 
 function slideShow(){
 
-    for (let i = 0 ; i < imagens.length ; i++) {
+    for (let i = 0 ; i < images.length ; i++) {
         setTimeout(() =>{
-            paisagens.src = imagens[i];
+            landscapes.src = images[i];
         } 
         ,i *5000);
         
      }
     }
 
-    function relogio(){
-        const data = new Date();
-        hora = data.getHours();
-        minutos = data.getMinutes();
-        segundos = data.getSeconds();
+    function clock(){
+        const date = new Date();
+        hours = date.getHours();
+        minutes = date.getMinutes();
+        seconds = date.getSeconds();
 
-        const tempo = hora + ':' + minutos + ':' + segundos;
-        horario.innerHTML = tempo;
+        const total = hours + ':' + minutes + ':' + seconds;
+        time.innerHTML = total;
     }   
 
     
